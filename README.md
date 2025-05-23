@@ -1,10 +1,10 @@
-# ffstudio_tools
+# PuzzleSolver
 
-A new Flutter project.
+A Flutter application for solving various puzzles, including Countle and more.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a Flutter application that provides tools for solving different types of puzzles.
 
 A few resources to get you started if this is your first Flutter project:
 
