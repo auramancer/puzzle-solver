@@ -1,5 +1,5 @@
-name: ffstudio_tools
-description: "A new Flutter project."
+name: puzzle_solver
+description: "A collection of puzzle solvers including Countle"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -35,9 +35,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   flutter_riverpod: ^2.6.1
-  go_router: ^15.1.2
   google_fonts: ^6.2.1
-  shared_preferences: ^2.5.3
   flutter_animate: ^4.5.2
 
 dev_dependencies:
