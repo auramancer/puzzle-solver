@@ -22,7 +22,7 @@ jobs:
         run: flutter pub get
         
       - name: Build
-        run: flutter build web --base-href /ffstudio_tools/
+        run: flutter build web --base-href /puzzle-solver/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
