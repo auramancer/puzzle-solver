@@ -153,6 +153,7 @@ class _CountleSolverPageState extends State<CountleSolverPage> {
             fontSize: isTarget ? 48 : 32,
             fontWeight: FontWeight.bold,
           ),
+          cursorColor: Colors.white,
           maxLength: 3,
           decoration: InputDecoration(
             counter: const SizedBox.shrink(),
