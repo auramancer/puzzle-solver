@@ -143,30 +143,40 @@ class _CountleSolverPageState extends State<CountleSolverPage> {
         borderRadius: BorderRadius.circular(8),
       ),
       child: Center(
-        child: TextField(
-          controller: controller,
-          focusNode: focusNode,
-          keyboardType: TextInputType.number,
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: isTarget ? 48 : 32,
-            fontWeight: FontWeight.bold,
-          ),
-          cursorColor: Colors.white,
-          maxLength: 3,
-          decoration: InputDecoration(
-            counter: const SizedBox.shrink(),
-            border: InputBorder.none,
-            contentPadding: EdgeInsets.symmetric(
-              horizontal: 8,
-              vertical: isTarget ? 32 : 16,
+        child: Theme(
+          data: Theme.of(context).copyWith(
+            textSelectionTheme: const TextSelectionThemeData(
+              cursorColor: Colors.white,
+              selectionColor: Colors.white24,
+              selectionHandleColor: Colors.white,
             ),
           ),
-          inputFormatters: [
-            FilteringTextInputFormatter.digitsOnly,
-          ],
-          onSubmitted: onSubmitted,
+          child: TextField(
+            controller: controller,
+            focusNode: focusNode,
+            keyboardType: TextInputType.number,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: isTarget ? 48 : 32,
+              fontWeight: FontWeight.bold,
+            ),
+            cursorColor: Colors.white,
+            cursorWidth: 2,
+            maxLength: 3,
+            decoration: InputDecoration(
+              counter: const SizedBox.shrink(),
+              border: InputBorder.none,
+              contentPadding: EdgeInsets.symmetric(
+                horizontal: 8,
+                vertical: isTarget ? 32 : 16,
+              ),
+            ),
+            inputFormatters: [
+              FilteringTextInputFormatter.digitsOnly,
+            ],
+            onSubmitted: onSubmitted,
+          ),
         ),
       ),
     );
